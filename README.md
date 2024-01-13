@@ -1,5 +1,5 @@
 # C_CPlusPlus_Testing
-####Unit test
+#### Unit test
 one unit of code
 
 ####Integration testing
@@ -10,7 +10,7 @@ End-to-end testing
 Back-box type of testing (code not available)               
 Overall specifications are checked                  
 
-####Unit test basics (TEST)
+#### Unit test basics (TEST)
 Arrange ==> Act ==> Assert
 
 ####Test Fixtures (TEST_F)
@@ -22,13 +22,13 @@ static void SetUpTestCase();
 static void TearDownTestCase();                            
 SetUpTestCase ==> Fixture Constructor ==> Setup ==> Test body ==> TearDown ==> Fixture Destructor => TearDownTestCase                                                             
 
-####Parameterized Test (TEST_P)
+#### Parameterized Test (TEST_P)
 Generating multiple test cases but writing the test body just once                  
 Inherit from testing::TestWithParam<T> not inherit from testing::Test                   
 SetUpTestCase and TearDownTestCase => public                    
 INSTANTIATE_TEST_SUITE_P => generate tests from params                      
 
-####Mock Test
+#### Mock Test
 create a fake object to simulate the behavior of real object within a system. The primary goal of mock testing is to isolate the code being tested and verify that it interacts correctly with its dependencies.
 -Fake                                             
     + working implementation                
@@ -46,7 +46,7 @@ Syntax:
         MOCK_METHOD(int, sum, (int, int));              
     MOCK_METHOD(ReturnType, MethodName, (Arguments...), (Specs...));            
     Specs:              
-        const                   void doSomeThing() const;                     MOCK_METHOD(void, doSomeThing, (), (const));
+        const       ==>            void doSomeThing() const;        ==>             MOCK_METHOD(void, doSomeThing, (), (const));                
         override            
         noexcept                        
 
@@ -102,7 +102,7 @@ sudo cp -r gmock /usr/local/include
 cd googletest/include           
 sudo cp -r gtest /usr/local/include             
 
-====================copile and run================================
+====================copile and run================================                      
 cmake -S . -B target/build              
 cd target/build             
 make                
