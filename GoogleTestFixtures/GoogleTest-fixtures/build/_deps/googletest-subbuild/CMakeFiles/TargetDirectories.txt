@@ -1,0 +1,3 @@
+/workspaces/C_CPlusPlus_Testing/GoogleTestFixtures/GoogleTest-fixtures/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
+/workspaces/C_CPlusPlus_Testing/GoogleTestFixtures/GoogleTest-fixtures/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/workspaces/C_CPlusPlus_Testing/GoogleTestFixtures/GoogleTest-fixtures/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
