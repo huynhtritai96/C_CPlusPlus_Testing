@@ -81,3 +81,53 @@ int main(int argc, char **argv) {
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
+
+/*
+@huynhtritai96 ➜ .../C_CPlusPlus_Testing/GoogleTestFixtures/GoogleTest-fixtures/build (main) $ ./unitTestRunner 
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from AccountTest
+[ RUN      ] AccountTest.TestEmptyAccount
+[       OK ] AccountTest.TestEmptyAccount (0 ms)
+[----------] 1 test from AccountTest (0 ms total)
+
+[----------] 5 tests from AccountTestFixture
+SetUpTestCase called
+[ RUN      ] AccountTestFixture.TestDeposit
+Constructor called
+SetUp called
+Test body
+TearDown called
+Destructor called
+[       OK ] AccountTestFixture.TestDeposit (0 ms)
+[ RUN      ] AccountTestFixture.TestWithdrawOK
+Constructor called
+SetUp called
+TearDown called
+Destructor called
+[       OK ] AccountTestFixture.TestWithdrawOK (0 ms)
+[ RUN      ] AccountTestFixture.TestWithdrawInsufficientFunds
+Constructor called
+SetUp called
+TearDown called
+Destructor called
+[       OK ] AccountTestFixture.TestWithdrawInsufficientFunds (0 ms)
+[ RUN      ] AccountTestFixture.TestTransferOK
+Constructor called
+SetUp called
+TearDown called
+Destructor called
+[       OK ] AccountTestFixture.TestTransferOK (0 ms)
+[ RUN      ] AccountTestFixture.TestTransferInsufficientFunds
+Constructor called
+SetUp called
+TearDown called
+Destructor called
+[       OK ] AccountTestFixture.TestTransferInsufficientFunds (0 ms)
+TearDownTestCase called
+[----------] 5 tests from AccountTestFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 6 tests.
+*/
